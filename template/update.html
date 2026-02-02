@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Update Transaksi Keuangan</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css" />
+
+    <script src="../js/main.js"></script>
+  </head>
+
+  <body class="antialiased bg-body text-body font-body">
+    <form id="form-update">
+      <div class="container mx-auto py-10">
+        <section class="bg-coolGray-50">
+          <div class="container px-4 mx-auto">
+            <div
+              class="p-6 border border-coolGray-100 bg-white rounded-md shadow-dashboard">
+              <!-- Header -->
+              <div
+                class="pb-6 border-b border-coolGray-100 flex justify-between items-center">
+                <div>
+                  <h2 class="text-lg font-semibold text-coolGray-900">
+                    Update Transaksi Keuangan
+                  </h2>
+                  <p class="text-sm text-coolGray-500">Edit data transaksi</p>
+                </div>
+                <div class="flex gap-2">
+                  <button
+                    type="button"
+                    id="btn-cancel"
+                    class="px-4 py-2 text-sm text-coolGray-500 border border-coolGray-200 rounded-md">
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    class="px-4 py-2 text-sm text-white bg-green-500 rounded-md">
+                    Update
+                  </button>
+                </div>
+              </div>
+
+              <!-- FORM -->
+              <div class="py-6 space-y-6">
+                <!-- ID (readonly) -->
+                <div class="flex items-center">
+                  <label class="w-1/3 text-sm font-semibold">ID</label>
+                  <input
+                    type="text"
+                    id="id"
+                    readonly
+                    class="w-2/3 px-4 py-2 border border-coolGray-200 rounded-md bg-gray-100" />
+                </div>
+
+                <!-- Tanggal -->
+                <div class="flex items-center">
+                  <label class="w-1/3 text-sm font-semibold">Tanggal</label>
+                  <input
+                    type="date"
+                    id="tanggal"
+                    class="w-2/3 px-4 py-2 border border-coolGray-200 rounded-md"
+                    required />
+                </div>
+
+                <!-- Jenis -->
+                <div class="flex items-center">
+                  <label class="w-1/3 text-sm font-semibold">Jenis</label>
+                  <select
+                    id="jenis"
+                    class="w-2/3 px-4 py-2 border border-coolGray-200 rounded-md"
+                    required>
+                    <option value="">-- Pilih Jenis --</option>
+                    <option value="masuk">Masuk</option>
+                    <option value="keluar">Keluar</option>
+                  </select>
+                </div>
+
+                <!-- Kategori -->
+                <div class="flex items-center">
+                  <label class="w-1/3 text-sm font-semibold">Kategori</label>
+                  <input
+                    type="text"
+                    id="kategori"
+                    class="w-2/3 px-4 py-2 border border-coolGray-200 rounded-md"
+                    required />
+                </div>
+
+                <!-- Deskripsi -->
+                <div class="flex items-center">
+                  <label class="w-1/3 text-sm font-semibold">Deskripsi</label>
+                  <input
+                    type="text"
+                    id="deskripsi"
+                    class="w-2/3 px-4 py-2 border border-coolGray-200 rounded-md" />
+                </div>
+
+                <!-- Jumlah -->
+                <div class="flex items-center">
+                  <label class="w-1/3 text-sm font-semibold">Jumlah</label>
+                  <input
+                    type="number"
+                    id="jumlah"
+                    class="w-2/3 px-4 py-2 border border-coolGray-200 rounded-md"
+                    required />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </form>
+
+    <!-- JS -->
+    <script src="../js/config.js"></script>
+    <script src="../js/update.js"></script>
+  </body>
+</html>
