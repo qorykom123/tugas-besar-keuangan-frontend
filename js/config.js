@@ -1,9 +1,10 @@
 // ================== API CONFIG ==================
-const API_BASE = "https://tugas-besar-keuangan-backend-production.up.railway.app/api";
+const BASE_URL = "https://tugas-besar-keuangan-backend.onrender.com";
 
-const API_LOGIN = `${API_BASE}/login`;
-const API_REGISTER = `${API_BASE}/register`;
-const API_KEUANGAN = `${API_BASE}/keuangan`;
+const API_LOGIN = `${BASE_URL}/api/login`;
+const API_REGISTER = `${BASE_URL}/api/register`;
+const API_KEUANGAN = `${BASE_URL}/api/keuangan`;
+
 
 // ================== JWT HELPERS ==================
 const TOKEN_KEY = "token";
